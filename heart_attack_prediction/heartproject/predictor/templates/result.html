@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .result-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+        }
+
+        .result-box h2 {
+            color: #0077cc;
+            margin-bottom: 15px;
+        }
+
+        .result-box p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .result-box a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: #0077cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .result-box a:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="result-box">
+    <h2>Prediction Result</h2>
+    <p>Your predicted heart attack risk is:</p>
+    <p><strong>{{ prediction }}%</strong></p>
+    <a href="/">Try Again</a>
+</div>
+
+</body>
+</html>
